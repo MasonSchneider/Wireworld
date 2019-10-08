@@ -13,7 +13,7 @@ For every tick each cell transfers from the left to the right.
 * empty -> empty
 * electron head -> electron tail
 * electron tail -> conductor
-* conductor -> electron head if exactly one ofr two of the neighbouring cells are electron heads, otherwise it remains a conductor
+* conductor -> electron head if exactly one or two of the neighbouring cells are electron heads, otherwise it remains a conductor
 
 "Neighbors" use Moor neighborhood so diagnols count.
 
@@ -38,7 +38,6 @@ For the sake of clarity, if/when a program prints images of the simulation the f
 ### Go
 
 1. Follow the [install guide](https://golang.org/doc/install)
-2. ```cd Wireworld/go/src/wireworld/```
+2. ```cd Wireworld/go/```
 3. ```export GOPATH=/path/to/Wireworld/go```
-4. ```go build```
-5. ```./wireworld```
+5. ```go run src/wireworld.go --input_path=../circuits/one-charge.wir```
